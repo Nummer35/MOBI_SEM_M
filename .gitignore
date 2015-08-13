@@ -1,0 +1,4 @@
+*.log
+Latex/bare_conf.aux
+*.gz
+Latex/bare_conf.pdf

@@ -64,6 +64,7 @@
 % draft mode.
 %
 \documentclass[conference]{IEEEtran}
+\usepackage{german}
 % Add the compsoc option for Computer Society conferences.
 %
 % If IEEEtran.cls has not been installed into the LaTeX system files,
@@ -358,22 +359,13 @@
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
-\author{\IEEEauthorblockN{Michael Shell}
-\IEEEauthorblockA{School of Electrical and\\Computer Engineering\\
-Georgia Institute of Technology\\
-Atlanta, Georgia 30332--0250\\
-Email: http://www.michaelshell.org/contact.html}
-\and
-\IEEEauthorblockN{Homer Simpson}
-\IEEEauthorblockA{Twentieth Century Fox\\
-Springfield, USA\\
-Email: homer@thesimpsons.com}
-\and
-\IEEEauthorblockN{James Kirk\\ and Montgomery Scott}
-\IEEEauthorblockA{Starfleet Academy\\
-San Francisco, California 96678-2391\\
-Telephone: (800) 555--1212\\
-Fax: (888) 555--1212}}
+\author{
+
+\IEEEauthorblockN{Alexander Baumg"artner\\ and Tina K"ammererer\\ and Lars Taubmann}
+\IEEEauthorblockA{University of Bamberg\\
+96047 Bamberg, Germany\\
+Email: firstname.lastname@uni-bamberg.de\\}
+}
 
 % conference papers do not typically use \thanks and this command
 % is locked out in conference mode. If really needed, such as for
@@ -411,6 +403,7 @@ Fax: (888) 555--1212}}
 
 
 \begin{abstract}
+\textbf{0,25 Seiten}
 %\boldmath
 [AB]Diese Arbeit befasst sich mit verschieden geographischen Verschleierungsmethoden. Im ersten Teil werden drei Methoden Spacial Cloaking, Space Transformation und False Locations genauer betrachtet. Im zweiten Abschnitt werden die betrachteten Ansätze gegenüber gestellt und auf verschiedene Kriterien verglichen. 
 \end{abstract}
@@ -439,36 +432,59 @@ Fax: (888) 555--1212}}
 
 
 \section{Introduction}
+\textbf{0,75 - 1 Seiten}
 \input{Introduction}
-% no \IEEEPARstart
-This demo file is intended to serve as a ``starter file''
-for IEEE conference papers produced under \LaTeX\ using
-IEEEtran.cls version 1.7 and later.
-% You must have at least 2 lines in the paragraph with the drop letter
-% (should never be an issue)
-I wish you the best of success.
+
 
 \hfill mds
  
 \hfill January 11, 2007
 
 \section{Related Work}
+\textbf{0,5 -1,5 Seiten}
 \input{RelatedWork}
-%L-Diversity 
+ 
 
 \section{Approach}
+\textbf{2 Seiten pro Person}
 \input{Approach}
+
 
 \subsection{Spatial Cloaking}
 \input{SpatialCloaking}
 
+
 \subsection{Space Transformation}
 \input{SpaceTransformation}
+
 
 \subsection{False Locations}
 \input{FalseLocations}
 
 
+\section{Analysis}
+\textbf{1 - 3 Seiten}
+\input{Analysis}
+
+
+\section{Conclusion}
+\textbf{0,5 - 1 Seiten}
+\input{Conclusion}
+The conclusion goes here.
+
+
+
+\begin{thebibliography}{1}
+	
+	\bibitem{IEEEhowto:kopka}
+	H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+	0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+	
+\end{thebibliography}
+
+
+
+\end{document}
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
 % For figures, \caption should occur after the \includegraphics.
@@ -551,16 +567,6 @@ I wish you the best of success.
 % footnotes above bottom floats. This can be corrected via the \fnbelowfloat
 % command of the stfloats package.
 
-\section{Analysis}
-\input{Analysis}
-
-\section{Conclusion}
-\input{Conclusion}
-The conclusion goes here.
-
-
-
-
 % conference papers do not normally have an appendix
 
 
@@ -588,18 +594,3 @@ The conclusion goes here.
 % <OR> manually copy in the resultant .bbl file
 % set second argument of \begin to the number of references
 % (used to reserve space for the reference number labels box)
-\begin{thebibliography}{1}
-
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
-
-\end{thebibliography}
-
-
-
-
-% that's all folks
-\end{document}
-
-

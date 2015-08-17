@@ -361,20 +361,28 @@
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
-\author{	
-	\IEEEauthorblockN{Alexander Baumgärtner}
-	\IEEEauthorblockA{Otto-Friedrich Universität\\
-		Bamberg\\
-		Telefon: 0176/30767807}
+%\author{	
+%	\IEEEauthorblockN{Alexander Baumgärtner}
+% %	\IEEEauthorblockA{Otto-Friedrich Universität\\
+%		Bamberg\\
+%		Telefon: 0176/30767807}
 	
-	\and
+%	\and
 		
-	\IEEEauthorblockN{Tina Kämmerer}
-	\IEEEauthorblockA{
-		Otto-Friedrich Universität\\
-		Bamberg, Deutschland}
-	}
+%	\IEEEauthorblockN{Tina Kämmerer}
+%	\IEEEauthorblockA{
+%		Otto-Friedrich Universität\\
+%		Bamberg, Deutschland}
+%	}
 
+ \author{
+ 	\IEEEauthorblockN{Alexander Baumg"artner and Tina K"ammerer and Lars Taubmann}
+ 	\IEEEauthorblockA{
+ 			Chair of Computer Science, in particular Mobile Software Systems / Mobility\\
+ 			Otto-Friedrich University of Bamberg
+ 			Bamberg, Germany\\
+ 			Email: firstname.lastname@uni-bamberg.de}
+ }
 % conference papers do not typically use \thanks and this command
 % is locked out in conference mode. If really needed, such as for
 % the acknowledgment of grants, issue a \IEEEoverridecommandlockouts
@@ -407,13 +415,7 @@
 
 
 % make the title area
-\maketitle
 
-
-\begin{abstract}
-%\boldmath
-[AB]Diese Arbeit befasst sich mit verschieden geographischen Verschleierungsmethoden. Im ersten Teil werden drei Methoden Spacial Cloaking, Space Transformation und False Locations genauer betrachtet. Im zweiten Abschnitt werden die betrachteten Ansätze gegenüber gestellt und auf verschiedene Kriterien verglichen. 
-\end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
 % if the conference you are submitting to favors bold math in the abstract,
@@ -423,7 +425,7 @@
 
 % no keywords
 
-Keywords—trajectory; location privacy; anonymization; spatial cloaking; dummy trajectory; location-based services
+
 
 
 % For peer review papers, you can put extra information on the cover
@@ -434,27 +436,36 @@ Keywords—trajectory; location privacy; anonymization; spatial cloaking; dummy 
 %
 % For peerreview papers, this IEEEtran command inserts a page break and
 % creates the second title. It will be ignored for other modes.
+\maketitle
+
+
+\begin{abstract}
+	%\boldmath
+	[AB]Diese Arbeit befasst sich mit verschieden geographischen Verschleierungsmethoden. Im ersten Teil werden drei Methoden Spacial Cloaking, Space Transformation und False Locations genauer betrachtet. Im zweiten Abschnitt werden die betrachteten Ansätze gegenüber gestellt und auf verschiedene Kriterien verglichen. 
+\end{abstract}
 \IEEEpeerreviewmaketitle
 
 
-
+Keywords—trajectory; location privacy; anonymization; spatial cloaking; dummy trajectory; location-based services
 \section{Introduction}
 \input{Introduction}
-
 \section{Related Work}
 \input{RelatedWork}
-
 \section{Approach}
 \input{Approach}
-
 \subsection{Spatial Cloaking}
 \input{SpatialCloaking}
-
 \subsection{Space Transformation}
 \input{SpaceTransformation}
-
 \subsection{False Locations}
 \input{FalseLocations}
+\section{Analysis}
+\input{Analysis}
+\section{Conclusion}
+\input{Conclusion}
+\bibliographystyle{IEEEtran}
+\bibliography{Literature}
+\end{document}
 
 
 % An example of a floating figure using the graphicx package.
@@ -539,12 +550,7 @@ Keywords—trajectory; location privacy; anonymization; spatial cloaking; dummy 
 % footnotes above bottom floats. This can be corrected via the \fnbelowfloat
 % command of the stfloats package.
 
-\section{Analysis}
-\input{Analysis}
 
-\section{Conclusion}
-\input{Conclusion}
-The conclusion goes here.
 
 
 
@@ -576,13 +582,6 @@ The conclusion goes here.
 % <OR> manually copy in the resultant .bbl file
 % set second argument of \begin to the number of references
 % (used to reserve space for the reference number labels box)
-\bibliographystyle{IEEEtran}
-\bibliography{Literature}
 
-
-
-
-% that's all folks
-\end{document}
 
 

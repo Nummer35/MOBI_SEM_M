@@ -64,6 +64,16 @@
 % draft mode.
 %
 \documentclass[conference]{IEEEtran}
+\usepackage{german}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{dblfloatfix}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{threeparttable}
+\usepackage{graphicx}
+\usepackage[justification=centering, margin=0.5cm]{caption}
+\usepackage{subfig}
 % Add the compsoc option for Computer Society conferences.
 %
 % If IEEEtran.cls has not been installed into the LaTeX system files,
@@ -358,23 +368,28 @@
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
-\author{\IEEEauthorblockN{Michael Shell}
-\IEEEauthorblockA{School of Electrical and\\Computer Engineering\\
-Georgia Institute of Technology\\
-Atlanta, Georgia 30332--0250\\
-Email: http://www.michaelshell.org/contact.html}
-\and
-\IEEEauthorblockN{Homer Simpson}
-\IEEEauthorblockA{Twentieth Century Fox\\
-Springfield, USA\\
-Email: homer@thesimpsons.com}
-\and
+%\author{	
+%	\IEEEauthorblockN{Alexander Baumgärtner}
+% %	\IEEEauthorblockA{Otto-Friedrich Universität\\
+%		Bamberg\\
+%		Telefon: 0176/30767807}
+	
+%	\and
+		
+%	\IEEEauthorblockN{Tina Kämmerer}
+%	\IEEEauthorblockA{
+%		Otto-Friedrich Universität\\
+%		Bamberg, Deutschland}
+%	}
 
-\IEEEauthorblockN{Alexander Baumgärtner}
-\IEEEauthorblockA{Otto-Friedrich Universität\\
-Bamberg\\
-Telefon: 0176/30767807}}
-
+ \author{
+ 	\IEEEauthorblockN{Alexander Baumgärtner, Tina Kämmerer, Lars Taubmann}
+ 	\IEEEauthorblockA{
+ 			Mobile Software Systems Seminar\\
+ 			Otto-Friedrich Universität Bamberg\\
+ 			Bamberg, Deutschland\\
+ 			Email: (alexander-wilhelm.baumgaertner, tina-maria.kaemmerer, lars-thomas.taubmann)@stud.uni-bamberg.de}
+ }
 % conference papers do not typically use \thanks and this command
 % is locked out in conference mode. If really needed, such as for
 % the acknowledgment of grants, issue a \IEEEoverridecommandlockouts
@@ -407,13 +422,7 @@ Telefon: 0176/30767807}}
 
 
 % make the title area
-\maketitle
 
-
-\begin{abstract}
-%\boldmath
-[AB]Diese Arbeit befasst sich mit verschieden geographischen Verschleierungsmethoden. Im ersten Teil werden drei Methoden Spacial Cloaking, Space Transformation und False Locations genauer betrachtet. Im zweiten Abschnitt werden die betrachteten Ansätze gegenüber gestellt und auf verschiedene Kriterien verglichen. 
-\end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
 % if the conference you are submitting to favors bold math in the abstract,
@@ -434,39 +443,36 @@ Telefon: 0176/30767807}}
 %
 % For peerreview papers, this IEEEtran command inserts a page break and
 % creates the second title. It will be ignored for other modes.
+\maketitle
+
+
+\begin{abstract}
+	%\boldmath
+	[AB]Diese Arbeit befasst sich mit verschieden geographischen Verschleierungsmethoden. Im ersten Teil werden drei Methoden Spacial Cloaking, Space Transformation und False Locations genauer betrachtet. Im zweiten Abschnitt werden die betrachteten Ansätze gegenüber gestellt und auf verschiedene Kriterien verglichen. 
+\end{abstract}
 \IEEEpeerreviewmaketitle
 
 
-
+Keywords—trajectory; location privacy; anonymization; spatial cloaking; dummy trajectory; location-based services
 \section{Introduction}
 \input{Introduction}
-% no \IEEEPARstart
-%This demo file is intended to serve as a ``starter file''
-%for IEEE conference papers produced under \LaTeX\ using
-%IEEEtran.cls version 1.7 and later.
-% You must have at least 2 lines in the paragraph with the drop letter
-% (should never be an issue)
-%I wish you the best of success.
-
-\hfill mds
- 
-\hfill January 11, 2007
-
 \section{Related Work}
 \input{RelatedWork}
-%L-Diversity 
-
 \section{Approach}
 \input{Approach}
-
 \subsection{Spatial Cloaking}
 \input{SpatialCloaking}
-
 \subsection{Space Transformation}
 \input{SpaceTransformation}
-
 \subsection{False Locations}
 \input{FalseLocations}
+\section{Analysis}
+\input{Analysis}
+\section{Conclusion}
+\input{Conclusion}
+\bibliographystyle{IEEEtran}
+\bibliography{Literature}
+\end{document}
 
 
 % An example of a floating figure using the graphicx package.
@@ -551,12 +557,7 @@ Telefon: 0176/30767807}}
 % footnotes above bottom floats. This can be corrected via the \fnbelowfloat
 % command of the stfloats package.
 
-\section{Analysis}
-\input{Analysis}
 
-\section{Conclusion}
-\input{Conclusion}
-The conclusion goes here.
 
 
 
@@ -588,17 +589,6 @@ The conclusion goes here.
 % <OR> manually copy in the resultant .bbl file
 % set second argument of \begin to the number of references
 % (used to reserve space for the reference number labels box)
-\begin{thebibliography}{1}
 
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
-\end{thebibliography}
-
-
-
-
-% that's all folks
-\end{document}
 
 

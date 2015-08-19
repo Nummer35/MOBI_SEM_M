@@ -2,12 +2,18 @@
 \renewcommand{\arraystretch}{1.3}
 \caption{Vergleich verschiedener Anonymisierungsansätze}
 \label{table:vergleich1}
+\begin{threeparttable}
 \centering
     \begin{tabular}{{l|llllll}}
     	~                    								& LBS I / LBS II   & Processing Power & Overhead 	& Relocatable 	& Involved Parties & Trusted Services \\ \hline
     	Spatial Cloaking     								& ~                & ~                & ~        	& ~           	& ~                & ~                \\
     	Space Transformation 								& ~                & ~                & ~        	& ~           	& ~                & ~                \\
-	    False Locations \ref{subsubsection:realdummy}     	& Ja / Ja          & Middle   		  & Middle      & Ja           	& User*            & Nein			  \\
-    	False Locations \ref{subsubsection:pseudomiddle}    & Nein / Ja        & High     		  & High        & Ja            & User             & Middleware	      \\
+	    False Locations \ref{para:simple}     				& Ja / Ja          & Middle   		  & Middle      & Ja           	& User\tnote{a}    & Nein			  \\
+		False Locations \ref{para:modul}     				& Ja / Ja          & Middle   		  & Middle      & Ja           	& User    		   & Nein			  \\
+    	False Locations \ref{para:middle}    				& Nein / Ja        & High     		  & High        & Ja            & User             & Middleware	      \\
     \end{tabular}
+    \begin{tablenotes}
+    	\item[a] Daten von anderen Usern verbessern Ergebnis
+    \end{tablenotes}
+    \end{threeparttable}
 \end{table*}

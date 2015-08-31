@@ -3117,7 +3117,7 @@ between column types.}%
 % Thanks to Mr. Arseneau for providing the required format arguments
 % to produce the IEEE style.
 \def\citepunct{], [}
-\def\citedash{]--[}
+\def\cite{]--[}
 
 % V1.7 default to using same font for urls made by url.sty
 \AtBeginDocument{\csname url@samestyle\endcsname}

@@ -53,7 +53,7 @@ In Abbildung \ref{fig_chow2011_Distortion-Ansatz} ist zu erkennen, wie Person A 
 Dieser Ansatz benötigt keine Echtzeitinformationen von anderen Nutzern. Er ist besonders in Gebieten hilfreich, bei denen sich in der Umgebung des Anfragestellers nicht genug weitere Personen befinden, um k-anonymity zu gewährleisten. Ein für ein bestimmtes Gebiet zuständiger location anonymizer speichert sich dazu die Trajectories von verschiedenen Nutzern, welche sich zu einer beliebigen Zeit eingeloggt haben. Soll der location anonymizer nun für einen Nutzer k-anonymity gewährleisten und eine Cloaked-Area erstellen, hat aber nicht genug Personen in dem entsprechendem Gebiet, so greift dieser auf zuvor gespeicherte Trajectories zurück. Dabei versucht der location anonymizer anhand der Geschwindigkeit des Nutzers vorherzusagen, welche Footprints vergangener Aufzeichnungen sich am besten eignen um eine Cloaked-Area zu erstellen. Dies ist in Abbildung \ref{fig_chow2011_PredicationBased-Ansatz} verdeutlicht. Person A ist dabei der Nutzer des LBS und vorangegangene Trajectories wurden durch Person B und C (blaue und pinke Punkte) erzeugt. Problematisch ist jedoch die optimale Fläche der Cloaked-Area zu berechnen, da ein Suchalgorithmus implementiert werden muss, welcher die besten Positionen von aufgezeichneten Trajectories ermittelt. Hier sollte mit einer guten Heuristik gearbeitet werden. 
 \begin{figure}[!h]
 		\centering
-		\subfloat{\includegraphics[width=7.0cm]{Bilder/Alex/PredicationBased.png}\label{figA}}
+		\subfloat{\includegraphics[width=6.0cm]{Bilder/Alex/PredicationBased.png}\label{figA}}
 		\caption{Predication-based Ansatz}
 		\label{fig_chow2011_PredicationBased-Ansatz}
 \end{figure}

@@ -1,14 +1,15 @@
 \begin{table*}[!ht]
-\renewcommand{\arraystretch}{1.3}
+\centering
+\renewcommand{\arraystretch}{1.6}
 \caption{Vergleich verschiedener Anonymisierungsansätze}
 \label{table:vergleich1}
 \begin{threeparttable}
-\centering
-    \begin{tabular}{{l|llllll}}
-    	~                    								& LBS I / LBS II   & Processing Power & Overhead 	& Relocatable 	& Involved Parties & Trusted Services \\ \hline
-    	Mix-Zone           & Nein/Ja & ? & Niedrig & Nein & n User & Ja \\
-    	Vehicular Mix-Zone & Nein/Ja & ? & Niedrig & Nein & n User & Ja \\
-    	Space Transformation 								& ~                & ~                & ~        	& ~           	& ~                & ~                \\
+    \begin{tabular}{{l|cccccc}}
+    	~ & LBS I / LBS II   & Processing Power & Overhead 	& Relocatable 	& Involved Parties & Trusted Services \\ \hline
+    	Mix-Zone           & Nein / Ja & ? & Niedrig & Nein & n User & Ja \\
+    	Vehicular Mix-Zone & Nein / Ja & ? & Niedrig & Nein & n User & Ja \\
+    	Spatial Cloaking: Distortion & Ja / Ja & Mittel & Hoch & Ja & n User & Ja \\
+    	Spatial Cloaking: Prediction & Ja / Ja & Hoch   & Hoch & Ja & n User & Ja \\
 	    False Locations I (\ref{para:simple})     				& Ja / Ja          & Mittel   		  & Mittel      & Ja           	& 1 User\tnote{a}    & Nein			  \\
 		False Locations II (\ref{para:modul})     				& Ja / Ja          & Mittel   		  & Niedrig      & Ja           	& 1 User    		   & Nein\tnote{b}			  \\
     	False Locations III (\ref{para:middle})    				& Nein / Ja        & Hoch     		  & Hoch        & Ja            & 1 User             & Middleware	      \\

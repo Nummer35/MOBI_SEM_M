@@ -1,13 +1,13 @@
-Um die eigene Position vor Angreifern, oder auch nur vor bestimmten LBS zu verschleiern, sind in der Vergangenheit viele verschiedene Ansätze entwickelt worden. Zusätzlich zu den hier vorgestellten Ansätzen sind folgende verbreitet \cite{Chow2011}:
+Um die eigene Position vor Angreifern, oder auch nur vor bestimmten LBS, zu verschleiern sind in der Vergangenheit viele verschiedene Ansätze entwickelt worden. Zusätzlich zu den hier vorgestellten Ansätzen sind folgende verbreitet \cite{Chow2011}:
 \begin{itemize}
 \item{\textbf{Path Confusion}} wird für die Wahrung der Privatsphäre in Verkehrsüberwachungssystemen vorgeschlagen und soll auch in Gebieten mit niedrigem Verkehrsaufkommen ausreichende Anonymität gewährleisten. Hierzu wird ein Verschleierungsalgorithmus eingesetzt, der einzelne Positionen in einem Datenset verbirgt \cite{Hoh2007}.
-\item{\textbf{Path Confusion with Mobility Prediction and Data Caching}} verschleiert die Spatial Trajectory eines Users, indem sich überschneidende historische Trajectories ermittelt und gleichzeitig mit der realen Trajectory übertragen werden \cite{Meyerowitz2009}.
+\item{\textbf{Path Confusion with Mobility Prediction and Data Caching}} verschleiert die Spatial Trajectory eines Nutzers, indem sich überschneidende historische Trajectories ermittelt und gleichzeitig mit der realen Trajectory übertragen werden \cite{Meyerowitz2009}.
 \item{\textbf{Euler Histogram-based on Short IDs}} schützt die Privatsphäre im Rahmen von Verkehrsüberwachungssystemen durch die Aggegration von Daten und den Einsatz von anonymisierten IDs \cite{Xie2010}.
 \end{itemize}
 Ein anderer Aspekt ist der Umgang mit Datensätzen, die für eine Veröffentlichung vorgeshen sind. Um hier die Möglichkeit der Anonymisierung zu bieten können folgende Ansätze näher betrachtet werden \cite{Chow2011}:
 \begin{itemize}
 \item {} Zur \textbf{Clustering-based Anonymisierung} wird eine aggregierte Trajectory verwendet, welche aus k räumlich und zeitlich benachbarten Trajectories generiert wird.
-\item{\textbf{Generalization-based Anonymisierung}} werden k Trajectories zu einem gemeinsamen Trajectory Set generalisiert, aus welchem dann k Trajectories generiert werden.
-\item{} Bei der \textbf{Suppression-based Anonymisierung} wird die Wahrscheinlichkeit berechnet, mit der die Position einer Trajectory einem User zugeordnet werden kann. Wenn diese über einem gewissen Schwellenwert liegt, wird ein Greedy Algorithmus eingesetzt, welcher iterativ Positionen entfernt, bis der Schwellenwert erreicht wird.
+\item{\textbf{Generalization-based Anonymisierung}} werden k Trajectories zu einem gemeinsamen Trajectory Set generalisiert, aus welchem dann für die Anfrage an das LBS k Trajectories generiert werden.
+\item{} Bei der \textbf{Suppression-based Anonymisierung} wird die Wahrscheinlichkeit berechnet, mit der die Position einer Trajectory einem Nutzer zugeordnet werden kann. Wenn diese über einem gewissen Schwellenwert liegt, wird ein Greedy Algorithmus eingesetzt, welcher iterativ Positionen aus den Trajectories entfernt, bis der Schwellenwert erreicht wird.
 \item{\textbf{Grid-based Anonymisierung}} basiert auf der Erstellung eines Grids, das abhängig von dem gewünschten Anonymisierungsgrad partitioniert wird.
 \end{itemize}
